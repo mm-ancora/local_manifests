@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="ancora"
+          fetch="https://github.com" />
+  <remote name="msm7x30"
+          fetch="https://github.com" />
+
+  <project name="mm-ancora/local_manifests" path="vendor/extra" remote="ancora" />
+  <project name="mm-ancora/android_device_samsung_ancora" path="device/samsung/ancora" remote="ancora" />
+  <project name="mm-ancora/samsung-kernel-msm7x30" path="kernel/samsung/msm7x30-common" remote="ancora" revision="cm-12.0" />
+  <project name="mm-ancora/android_vendor_samsung_ancora" path="vendor/samsung/ancora" remote="ancora" revision="cm-12.0" />
+
+ 
+  <!-- msm7x30 projects -->
+  <project name="msm7x30/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+
+  <!-- CyanogenMod projects -->
+  <project name="CyanogenMod/android_external_stlport" path="external/stlport" />
+
+
+  <!-- AOSP projects-->
+  <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="master" />
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="master" />
+</manifest>
