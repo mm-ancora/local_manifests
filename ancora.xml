@@ -8,7 +8,7 @@
   <project name="mm-ancora/local_manifests" path="vendor/extra" remote="ancora" />
   <project name="mm-ancora/android_device_samsung_ancora" path="device/samsung/ancora" remote="ancora" />
   <project name="mm-ancora/samsung-kernel-msm7x30" path="kernel/samsung/msm7x30-common" remote="ancora" revision="cm-12.0" />
-  <project name="mm-ancora/android_vendor_samsung_ancora" path="vendor/samsung/ancora" remote="ancora" revision="cm-12.0" />
+  <project name="mm-ancora/android_vendor_samsung_ancora" path="vendor/samsung/ancora" remote="ancora" revision="cm-13.0" />
 
  
   <!-- msm7x30 projects -->
