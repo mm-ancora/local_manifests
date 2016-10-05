@@ -12,14 +12,18 @@ if [ -f ${android}/updates-local.sh ]; then
     source ${android}/updates-local.sh
 fi
 
-# Use RECOVERY_PRE_COMMAND before calling __reboot() recovery
-cherries+=(CM_115693)
+# MemoryHeapBase: ifdef for gingerbread/froyo compatibility
+cherries+=(CM_58227)
+
+# Correctly provide the technology to setup data connection
+cherries+=(CM_81082)
+
+# linker: restore prelink support
+cherries+=(CM_78604)
 
 # Revert "Revert "Reenable support for non-PIE executables""
 cherries+=(CM_117733)
 
-# arm: Allow disabling PIE for dynamically linked executables
-cherries+=(CM_123032)
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
