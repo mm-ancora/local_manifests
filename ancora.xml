@@ -5,6 +5,13 @@
   <remote name="msm7x30"
           fetch="https://github.com" />
 
+  <remove-project name="CyanogenMod/android_bionic" />
+  <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+  <project name="mm-ancora/android_bionic" path="bionic" remote="ancora" />
+  <project name="mm-ancora/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="ancora" />
+
+  
+
   <project name="mm-ancora/local_manifests" path="vendor/extra" remote="ancora" />
   <project name="mm-ancora/android_device_samsung_ancora" path="device/samsung/ancora" remote="ancora" revision="cm-13.0_test" />
   <project name="mm-ancora/samsung-kernel-msm7x30" path="kernel/samsung/msm7x30-common" remote="ancora" revision="cm-12.0" />
