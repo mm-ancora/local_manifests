@@ -15,9 +15,6 @@ fi
 # MemoryHeapBase: ifdef for gingerbread/froyo compatibility
 cherries+=(CM_58227)
 
-# Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_117733)
-
 
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
