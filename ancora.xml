@@ -7,8 +7,10 @@
 
   <remove-project name="CyanogenMod/android_bionic" />
   <remove-project name="CyanogenMod/android_frameworks_opt_telephony" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
   <project name="mm-ancora/android_bionic" path="bionic" remote="ancora" />
   <project name="mm-ancora/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="ancora" />
+  <project name="mm-ancora/android_frameworks_native" path="frameworks/native" remote="ancora" />
 
   
 
